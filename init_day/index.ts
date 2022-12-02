@@ -19,6 +19,7 @@ const README = `
 
   bun run index.ts
 `;
+fs.mkdirSync(`${pathToDays}/${newDay}`, { recursive: true });
 fs.writeFileSync(`${pathToDays}/${newDay}/README.md`, README, {
   flag: "wx",
 });
