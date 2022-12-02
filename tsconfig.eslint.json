@@ -1,0 +1,14 @@
+{
+  // extend your base config so you don't have to redefine your compilerOptions
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "allowJs": false,
+    "module": "esnext",
+  },
+  "include": [
+    "days/**/*.ts",
+    "init_days/**/*.ts",
+    "utils/**/*.ts",
+    ".eslintrc.js",
+  ]
+}
