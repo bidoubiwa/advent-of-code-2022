@@ -35,8 +35,14 @@ bun run init_day/index.ts
 
 ### Day 1
 
-- **Part 1** [code](src/day_01/part_1/aoc.ts)
+- **Part 1** [code](./days/day_1/part_1/index.ts)
 
-- **Part 2** [code](./src/day_01/part_2/aoc.ts)
+- **Part 2** [code](./days/day_1/part_2/index.ts)
+
+### Day 2
+
+- **Part 1** [code](./days/day_2/part_1/index.ts)
+
+- **Part 2** [code](./days/day_2/part_2/index.ts)
 
 
