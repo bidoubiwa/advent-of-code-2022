@@ -12,21 +12,18 @@ import getInput from "../../../utils/get_input";
 // Y = DRAW
 // Z = win
 
-const symbolsPoints: Record<string, number> = {
-  A: 1,
-  B: 2,
-  C: 3,
-};
-
 export default (): void => {
   const input = getInput(import.meta.dir)
+    .replaceAll("A", "1")
+    .replaceAll("B", "2")
+    .replaceAll("C", "3")
     .split(/\r?\n/)
     .filter(line => line !== "");
 
   const totalScore = input.reduce((total, combat) => {
     const [symbol, outcome] = combat.split(" ");
 
-    const point = symbolsPoints[symbol];
+    const point = parseInt(symbol);
     if (outcome === "X") {
       total += point !== 1 ? point - 1 : 3;
     } else if (outcome === "Y") {
