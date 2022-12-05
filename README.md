@@ -1,3 +1,4 @@
+a
 <h1 align="center"> Advent of code 2022 with Bun </h1>
 
 <p align="center">
